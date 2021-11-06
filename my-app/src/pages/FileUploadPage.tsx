@@ -9,6 +9,7 @@ export const FileUploadPage:React.FC = () => {
     const [fileName,setFileName] = useState<string>('');
     const [progress,setProgress] = useState<number>(0);
 
+    // TODO доделать загрузку файла.
     const upload = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.preventDefault();
         const target = e.target as HTMLInputElement;
@@ -18,6 +19,7 @@ export const FileUploadPage:React.FC = () => {
         // setFileName(file.name);
     };
 
+    // TODO доделать отправку файла на сервер.
     const send = async (e: React.MouseEvent<HTMLButtonElement>) => {
         const formData = new FormData();
         formData.append('file',file);
@@ -49,8 +51,8 @@ export const FileUploadPage:React.FC = () => {
                 </IconButton>
             </label>
             {fileName !== '' && <span>{fileName}</span>}
-            <div className={styles.progress}>
-            </div>
+            {/*  TODO сделать прогресс бар */}
+            <div className={styles.progress}></div>
             <Divider/>
             <div className={styles.footer}>
                 <Button 
