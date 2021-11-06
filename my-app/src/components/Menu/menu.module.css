@@ -1,0 +1,23 @@
+.menu {
+    height: 100vh;
+    min-width: 130px;
+    background-color: rgb(44, 37, 37);
+    color: white;
+}
+.menuitem {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.menuitem:hover {
+    color: blue;
+}
+.link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+.myicon {
+    cursor: pointer;
+    margin-right: 5px;
+}

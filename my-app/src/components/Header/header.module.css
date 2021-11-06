@@ -1,0 +1,14 @@
+.header {
+    background-color: rgb(100, 79, 79);
+    height: 50px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.icon {
+    cursor: pointer;
+}
+.iconwrapper {
+    display: flex;
+    justify-content: flex-start;
+}
