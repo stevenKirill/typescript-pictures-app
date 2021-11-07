@@ -1,0 +1,5 @@
+export enum EAnimalActions {
+    LOAD_CAT_LOADING = 'LOAD_CAT_LOADING',
+    LOAD_CAT_SUCCESS = 'LOAD_CAT_SUCCESS',
+    LOAD_CAT_ERROR = 'LOAD_CAT_ERROR',
+};
