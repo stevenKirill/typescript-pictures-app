@@ -1,16 +1,7 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import { rootReducer } from "./rootReducer";
-import { IInitialState, IAnimal } from "./types";
+import thunk from "redux-thunk";
 
-const initial: IInitialState = {
-    loadAnimals: false,
-    errorAnimals: {
-        code: '',
-        message: '',
-    },
-    catData: {} as ICat
-};
-
-const store = createStore(initial,rootReducer);
+const store = createStore(rootReducer,applyMiddleware(thunk));
 
 export default store;

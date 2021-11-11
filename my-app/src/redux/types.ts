@@ -1,4 +1,5 @@
 import { Action } from 'redux';
+import { EAnimalActions } from './animals/enums';
 
 export interface IAction<T> extends Action {
     payload: T;
@@ -21,10 +22,14 @@ export interface IAnimal {
 };
 
 export interface IInitialState {
-    loadAnimals: boolean;
-    errorAnimals: IError;
-    catData: IAnimal
+    animals: IInitialAnimals
 };
+
+export interface IInitialAnimals {
+    loadingAnimals: boolean;
+    errorAnimals: boolean;
+    animalData: IAnimal
+}
 
 export type GenericGetState<T> = () => T;
 export type GenericThunkAction<T> = (dispatch: GenericDispatch<T>, getState: GenericGetState<T>) => void;
@@ -39,4 +44,16 @@ export enum EResponseType {
     ERROR = 'error',
 }
 
-export type TDispatch = GenericDispatch<IInitialState>;
+export enum EMethod {
+    POST = 'POST',
+    GET = 'GET'
+}
+
+export type TDispatch = GenericDispatch<any>;
+
+interface  IResult {
+    type: EAnimalActions,
+    payload?: any,
+}
+
+export type TActionBuilder = (result: any) => IResult

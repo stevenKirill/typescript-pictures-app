@@ -1,8 +1,8 @@
-import { EResponseType, TDispatch } from "../types";
+import { EMethod, EResponseType, TDispatch } from "../types";
 import { EAnimalActions } from "./enums";
+import { dispatchAsync } from "../utils";
 
 const loadAnimalsActionBuilder = (result: any) => {
-    console.log(result,'=> result');
     switch (result.status) {
         case EResponseType.LOADING:
             return {
@@ -11,6 +11,9 @@ const loadAnimalsActionBuilder = (result: any) => {
         case EResponseType.SUCCESS:
             return {
                 type: EAnimalActions.LOAD_CAT_SUCCESS,
+                payload: {
+                    ...result.data
+                }
             };
         case EResponseType.ERROR:
             return {
@@ -25,9 +28,12 @@ const loadAnimalsActionBuilder = (result: any) => {
 };
 
 /** Асинхронный экшн. */
-export const loadAnimals = (body: any, apiMethod: URL) => {
-    const data = {};
+export const loadAnimals = (url: string,method: EMethod,key: string,body?: any) => {
+    const headers = new Headers({
+        'x-rapidapi-host': 'mlemapi.p.rapidapi.com',
+        'x-rapidapi-key': `${key}`
+    });
     return (dispatch: TDispatch) => {
-        // TODO вернуть обертку над пост запросом
+        return dispatchAsync(dispatch,method,body,headers,url,loadAnimalsActionBuilder);
     };
 };
