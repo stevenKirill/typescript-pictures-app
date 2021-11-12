@@ -1,5 +1,7 @@
 server/node_modules
 
+my-app/build
+
 my-app/node_modules
 
 my-app/src/uploads
