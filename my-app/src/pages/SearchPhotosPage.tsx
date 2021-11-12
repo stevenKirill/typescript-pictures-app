@@ -9,7 +9,6 @@ export const SearchPhotosPage: React.FC = () => {
     const dispatch: TDispatch = useDispatch();
     const { loadingAnimals, errorAnimals, animalData } = useSelector((state: IInitialState) => {
         const { animals } = state;
-        console.log(animals)
         return animals
 
     });

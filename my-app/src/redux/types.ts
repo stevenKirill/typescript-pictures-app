@@ -1,5 +1,6 @@
 import { Action } from 'redux';
 import { EAnimalActions } from './animals/enums';
+import { EBurgerActions } from './burgers/enums';
 
 export interface IAction<T> extends Action {
     payload: T;
@@ -21,14 +22,39 @@ export interface IAnimal {
     width: number;
 };
 
+export interface IAdress {
+    addressId: number;
+    number: number;
+    line1: string;
+    line2: string;
+    postcode: string;
+}
+
+export interface IBurger {
+    addresses: IAdress[];
+    description: string;
+    id: number;
+    ingredients: string[];
+    name: string;
+    restaurant: string;
+    web: string;
+}
+
 export interface IInitialState {
-    animals: IInitialAnimals
+    animals: IInitialAnimals;
+    burger: IInitialBurgers;
 };
 
 export interface IInitialAnimals {
     loadingAnimals: boolean;
     errorAnimals: boolean;
     animalData: IAnimal
+}
+
+export interface IInitialBurgers {
+    loadBurger: false;
+    errorBurger: false;
+    burgersData: IBurger[];
 }
 
 export type GenericGetState<T> = () => T;
@@ -51,8 +77,8 @@ export enum EMethod {
 
 export type TDispatch = GenericDispatch<any>;
 
-interface  IResult {
-    type: EAnimalActions,
+interface IResult {
+    type: EAnimalActions | EBurgerActions,
     payload?: any,
 }
 
