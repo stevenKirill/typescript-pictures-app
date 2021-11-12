@@ -11,6 +11,7 @@ import {
     ListItemIcon,
     ListItemText,
 } from '@mui/material';
+import Link from '@mui/material/Link';
 import { useDispatch, useSelector } from 'react-redux';
 import { burgerkey } from '../keys';
 import { loadBurgers } from '../redux/burgers/burgerActions';
@@ -67,9 +68,9 @@ const BurgersPage = () => {
                         <Typography variant="body2" color="text.secondary">
                             Restaurant: {burger.restaurant}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Website: {burger.web}
-                        </Typography>
+                        <Link href={burger.web} underline="none">
+                            {'Visit website'}
+                        </Link>
                     </CardContent>
                     <CardActions>
                         <Button size="small">Share</Button>
