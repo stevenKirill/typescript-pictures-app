@@ -72,11 +72,9 @@ export const dispatchAsync = async (
     try {
         if (method === EMethod.POST) {
             const response = await customPost(url,headers,body);
-            console.log(response,'=> response post');
             return processPost(dispatch,actionBuilder,response);
         } else if (method === EMethod.GET) {
             const response = await customGet(url, headers);
-            console.log(response,'=> response get');
             return processGet(dispatch,actionBuilder,response);
         }
 

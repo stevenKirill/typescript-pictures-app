@@ -4,7 +4,6 @@ import { EBurgerActions } from "./enums";
 
 
 export const burgerActionBuilder = (result: any) => {
-    console.log(result,'=> result')
     switch (result.status) {
         case EResponseType.LOADING:
             return {
