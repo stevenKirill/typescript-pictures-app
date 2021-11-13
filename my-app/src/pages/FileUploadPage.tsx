@@ -80,7 +80,7 @@ export const FileUploadPage:React.FC = () => {
     };
 
     const renderImage = () => {
-        const { filePath, fileName } = uploadedFile;
+        const { fileName } = uploadedFile;
         return (
             <div style={{ marginTop: '20px' }}>
                 <Divider/>
@@ -89,7 +89,6 @@ export const FileUploadPage:React.FC = () => {
                         component="img"
                         height="100%"
                         image={`../uploads/${fileName}`}
-                        // image={image}
                         alt="Uploaded photo"
                     />
                     <CardContent>

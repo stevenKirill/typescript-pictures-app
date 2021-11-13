@@ -91,7 +91,7 @@ const BurgersPage = () => {
                 </div>
                   ? errorBurger 
                   : 
-                  <div>Error</div>
+                  <div style={{ textAlign: 'center' }}>Error</div>
                     :
                     <div>
                         <h1 style={{ textAlign: 'center' }}>Burgers</h1>
