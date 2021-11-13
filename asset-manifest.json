@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/typescript-pictures-app/static/css/main.91dd4959.chunk.css",
-    "main.js": "/typescript-pictures-app/static/js/main.4ab37a7c.chunk.js",
-    "main.js.map": "/typescript-pictures-app/static/js/main.4ab37a7c.chunk.js.map",
-    "runtime-main.js": "/typescript-pictures-app/static/js/runtime-main.10da0b28.js",
-    "runtime-main.js.map": "/typescript-pictures-app/static/js/runtime-main.10da0b28.js.map",
-    "static/js/2.92c5a695.chunk.js": "/typescript-pictures-app/static/js/2.92c5a695.chunk.js",
-    "static/js/2.92c5a695.chunk.js.map": "/typescript-pictures-app/static/js/2.92c5a695.chunk.js.map",
-    "static/js/3.9de49f22.chunk.js": "/typescript-pictures-app/static/js/3.9de49f22.chunk.js",
-    "static/js/3.9de49f22.chunk.js.map": "/typescript-pictures-app/static/js/3.9de49f22.chunk.js.map",
+    "main.css": "/typescript-pictures-app/static/css/main.8a1cc664.chunk.css",
+    "main.js": "/typescript-pictures-app/static/js/main.d4a56dd0.chunk.js",
+    "main.js.map": "/typescript-pictures-app/static/js/main.d4a56dd0.chunk.js.map",
+    "runtime-main.js": "/typescript-pictures-app/static/js/runtime-main.ffa26ae2.js",
+    "runtime-main.js.map": "/typescript-pictures-app/static/js/runtime-main.ffa26ae2.js.map",
+    "static/js/2.dfe390bc.chunk.js": "/typescript-pictures-app/static/js/2.dfe390bc.chunk.js",
+    "static/js/2.dfe390bc.chunk.js.map": "/typescript-pictures-app/static/js/2.dfe390bc.chunk.js.map",
+    "static/js/3.146848bc.chunk.js": "/typescript-pictures-app/static/js/3.146848bc.chunk.js",
+    "static/js/3.146848bc.chunk.js.map": "/typescript-pictures-app/static/js/3.146848bc.chunk.js.map",
     "index.html": "/typescript-pictures-app/index.html",
-    "static/css/main.91dd4959.chunk.css.map": "/typescript-pictures-app/static/css/main.91dd4959.chunk.css.map",
-    "static/js/2.92c5a695.chunk.js.LICENSE.txt": "/typescript-pictures-app/static/js/2.92c5a695.chunk.js.LICENSE.txt"
+    "static/css/main.8a1cc664.chunk.css.map": "/typescript-pictures-app/static/css/main.8a1cc664.chunk.css.map",
+    "static/js/2.dfe390bc.chunk.js.LICENSE.txt": "/typescript-pictures-app/static/js/2.dfe390bc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.10da0b28.js",
-    "static/js/2.92c5a695.chunk.js",
-    "static/css/main.91dd4959.chunk.css",
-    "static/js/main.4ab37a7c.chunk.js"
+    "static/js/runtime-main.ffa26ae2.js",
+    "static/js/2.dfe390bc.chunk.js",
+    "static/css/main.8a1cc664.chunk.css",
+    "static/js/main.d4a56dd0.chunk.js"
   ]
 }
